@@ -1,0 +1,15 @@
+
+<div class="oj-hybrid-padding">
+    <!-- show Toolbar wit Two button Change Person and Change Employee -->
+    <div class="oj-helper-margin-start-auto oj-flex-item" style="margin-top:14px;">
+        <button class="oj-button-confirm" data-bind="ojComponent: {component: 'ojButton', label: 'Change Person',chroming: 'full'},click: callPersonMethod"></button>
+        <button class="oj-button-primary" data-bind="ojComponent: {component: 'ojButton', label: 'Change Employee',chroming: 'full'}, click: callDepartmentMethod"></button>
+    </div>
+    <h3>Main Page</h3>
+    <div>
+        Here is the Main Page
+    </div>
+    <!-- call person and department module with ojMudle-->
+    <div class="oj-flex-item oj-panel oj-margin" data-bind="ojModule: 'person'"></div>
+    <div class="oj-flex-item oj-panel oj-margin" data-bind="ojModule: 'department'"></div>
+</div>
